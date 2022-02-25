@@ -1,0 +1,12 @@
+[settings]
+arch=x86_64
+os=Linux
+build_type=Debug
+
+compiler=gcc
+compiler.version=8.5
+compiler.glibc=2.27
+compiler.libcxx=libstdc++11
+
+[build_requires]
+gcc_8.5.0_glibc_2.27_x86_64/0.0.1
