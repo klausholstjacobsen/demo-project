@@ -51,9 +51,9 @@ execute_process(COMMAND conan user -p ${DC_ARTIFACTORY_KEY} -r the-artifactory  
 
 conan_cmake_install(
         PATH_OR_REFERENCE ${CMAKE_CURRENT_LIST_DIR}/platforms/conanfile.${DC_PLATFORM}
-        PROFILE_HOST ${CMAKE_CURRENT_LIST_DIR}/platforms/profile.${DC_PLATFORM}
-        PROFILE_BUILD ${CMAKE_CURRENT_LIST_DIR}/platforms/profile.amd64-gcc8
-        #LOCKFILE ${CMAKE_CURRENT_LIST_DIR}/platforms/lock_file.${DC_PLATFORM}
+        #PROFILE_HOST ${CMAKE_CURRENT_LIST_DIR}/platforms/profile.${DC_PLATFORM}
+        #PROFILE_BUILD ${CMAKE_CURRENT_LIST_DIR}/platforms/profile.amd64-gcc8
+        LOCKFILE ${CMAKE_CURRENT_LIST_DIR}/platforms/lockfile.${DC_PLATFORM}
         BUILD missing UPDATE
 )
 
